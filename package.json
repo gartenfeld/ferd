@@ -1,12 +1,5 @@
 {
   "name": "ferd",
-  "version": "0.4.2",
-  "description": "A modular Slackbot",
-  "main": "index.js",
-  "author": {
-    "name": "Timothy Quach",
-    "email": "timothyquachbot@gmail.com"
-  },
   "version": "0.4.2", 
   "description": "A modular Slackbot",
   "main": "index.js",
@@ -20,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ferdx/ferd.git"
+    "url": "https://github.com/ferdx/ferd"
   },
   "dependencies": {
     "rx": "^3.1.2",
@@ -29,43 +22,5 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-jsdoc": "^0.6.8"
-  },
-  "gitHead": "7f1ed5b5336ee046ec20a8523e6303c32f9ec404",
-  "bugs": {
-    "url": "https://github.com/ferdx/ferd/issues"
-  },
-  "homepage": "https://github.com/ferdx/ferd#readme",
-  "_id": "ferd@0.4.2",
-  "scripts": {},
-  "_shasum": "82ab55006992aa5895ca1261f36c794d41c6cf58",
-  "_from": "ferd@latest",
-  "_npmVersion": "2.14.1",
-  "_nodeVersion": "0.12.7",
-  "_npmUser": {
-    "name": "andrewkishino",
-    "email": "AndrewKishino@gmail.com"
-  },
-  "dist": {
-    "shasum": "82ab55006992aa5895ca1261f36c794d41c6cf58",
-    "tarball": "http://registry.npmjs.org/ferd/-/ferd-0.4.2.tgz"
-  },
-  "maintainers": [
-    {
-      "name": "andrewkishino",
-      "email": "AndrewKishino@gmail.com"
-    },
-    {
-      "name": "callmenick",
-      "email": "nick@callmenick.com"
-    },
-    {
-      "name": "timothyquach",
-      "email": "timothyquachbot@gmail.com"
-    }
-  ],
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/ferd/-/ferd-0.4.2.tgz"
-=======
   }
->>>>>>> 1fba05683cc4e8b008e248347c8a3d1abfa85b8b
 }
