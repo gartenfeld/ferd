@@ -153,7 +153,7 @@ Ferd.prototype.session = function(summonRE, dismissRE, handlers) {
     return !!users[message.user];
   }, /.*/, handlers.converse);
 
-  cycle.birth = this.listen(summonRE, (res) => {
+  cycle.birth = this.listen(summonRE, function(res) {
     var userId = res.incomingMessage.user,
         username = res.getMessageSender().name;
     users[userId] = username;
