@@ -108,6 +108,7 @@ Ferd.prototype.respond = function(capture, callback) {
 
 /**
  * Allows multi-user sessions
+<<<<<<< HEAD
  * @param  {regex}   summon   RegEx triggered to register user in session
  * @param  {regex}   dismiss  RegEx triggered to terminate a session
  * @param  {object}  handlers callbacks for interacting with messages

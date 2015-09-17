@@ -7,6 +7,10 @@
     "name": "Timothy Quach",
     "email": "timothyquachbot@gmail.com"
   },
+  "version": "0.4.2", 
+  "description": "A modular Slackbot",
+  "main": "index.js",
+  "author": "Timothy Quach <timothyquachbot@gmail.com>",
   "contributors": [
     {
       "name": "Nick Salloum",
@@ -61,4 +65,7 @@
   ],
   "directories": {},
   "_resolved": "https://registry.npmjs.org/ferd/-/ferd-0.4.2.tgz"
+=======
+  }
+>>>>>>> 1fba05683cc4e8b008e248347c8a3d1abfa85b8b
 }
