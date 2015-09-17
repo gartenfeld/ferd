@@ -108,12 +108,11 @@ Ferd.prototype.respond = function(capture, callback) {
 
 /**
  * Allows multi-user sessions
- * @param  {regex}   summon   RegEx triggered to register user in session
- * @param  {regex}   dismiss  RegEx triggered to terminate a session
+ * @param  {object}  trigers  RegEx triggered to register/deregister a session
  * @param  {object}  handlers callbacks for interacting with messages
  * @return {disposable}       garbage can
  */
-Ferd.prototype.session = function(summonRE, dismissRE, handlers) {
+Ferd.prototype.session = function(triggers, handlers) {
   var self = this;
   var users = {};
   var defaults = {
@@ -143,7 +142,7 @@ Ferd.prototype.session = function(summonRE, dismissRE, handlers) {
     death: null
   };
   
-  cycle.death = self.listen(dismissRE, function(res) {
+  cycle.death = self.listen(triggers.dismiss, function(res) {
     var userId = res.incomingMessage.user;
     users[userId] = null;
     handlers.farewell(res);
@@ -153,7 +152,7 @@ Ferd.prototype.session = function(summonRE, dismissRE, handlers) {
     return !!users[message.user];
   }, /.*/, handlers.converse);
 
-  cycle.birth = this.listen(summonRE, function(res) {
+  cycle.birth = this.listen(triggers.summon, function(res) {
     var userId = res.incomingMessage.user,
         username = res.getMessageSender().name;
     users[userId] = username;
